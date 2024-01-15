@@ -1,0 +1,7 @@
+create database mywebdb;
+
+create user 'mywebUser'@'localhost' identified by 'mysql';
+
+grant all privilege on mywebdb.* to 'mywebUser'@'localhost' with grant option;
+
+flush privileges;
