@@ -9,21 +9,21 @@
 	<table class="table">
 		<thead>
 			<tr>
-				<th scope="col">#</th>
 				<th scope="col">email</th>
 				<th scope="col">nickname</th>
 				<th scope="col">pwd</th>
 				<th scope="col">reg_at</th>
+				<th scope="col">lastLogin</th>
 			</tr>
 		</thead>
 		<tbody>
-			<c:forEach items="${list}" var="bvo">
+			<c:forEach items="${mvo}" var="mvo">
 				<tr>
-					<th scope="row"><a href="/board/detail?bno=${bvo.bno}">${bvo.bno}</a></th>
-					<td>${bvo.title}</td>
-					<td>${bvo.writer}</td>
-					<td>${bvo.regAt}</td>
-					<td>${bvo.modAt}</td>
+					<th scope="row"><a href="/member/detail?email=${mvo.email}">${mvo.email}</a></th>
+					<td>${mvo.nickname}</td>
+					<td>${mvo.pwd}</td>
+					<td>${mvo.regAt}</td>
+					<td>${mvo.lastLogin}</td>
 				</tr>
 			</c:forEach>
 		</tbody>

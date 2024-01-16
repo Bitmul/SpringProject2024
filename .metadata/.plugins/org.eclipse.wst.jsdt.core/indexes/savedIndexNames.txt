@@ -1,7 +1,4 @@
 INDEX VERSION 1.4+D:\_spring_workspace_for_git\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-751494381.index
-1007320161.index
-1184050241.index
-1184050241.index
 206421467.index
+1007320161.index
 4261716507.index

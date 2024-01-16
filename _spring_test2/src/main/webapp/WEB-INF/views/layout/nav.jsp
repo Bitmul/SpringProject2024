@@ -18,7 +18,7 @@
 					<li class="nav-item"><a class="nav-link"
 						href="/board/register">게시판 글쓰기</a></li>
 					<li class="nav-item"><a class="nav-link" id="logoutLink"
-						href="/member/login">로그아웃</a></li>
+						href="/member/logout">로그아웃</a></li>
 					<form action="/member/logout" method="post" id="logoutForm">
 						<input type="hidden" name="email" value="${authEmail}">
 					</form>
@@ -28,7 +28,7 @@
 							<li class="nav-item"><a class="nav-link" id="logoutLink"
 								href="/member/list">회원리스트</a></li>
 							<li class="nav-item"><a class="nav-link" id="logoutLink"
-								href="/member/modify">회원정보수정</a></li>
+								href="/member/modify?email=${authEmail}">회원정보수정 ${authNick}(${authEmail})님 반갑습니다.</a></li>
 						</c:when>
 					</c:choose>
 				</sec:authorize>
